@@ -9,5 +9,12 @@ const newCard = document.getElementById('newCard')
 //content load and page refresh
 document.addEventListener('DOMContentLoaded',()=>{
     
- 
 })
+
+function pagerefresh(){
+  main.innerHTML = ''
+}
+
+//event listeners
+viewCollection.addEventListener('click', fetchCards)
+newCard.addEventListener('click', createNewCard)
