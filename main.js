@@ -25,3 +25,27 @@ function fetchCards(){
   .then (pagerefresh())
   .then(data=>data.forEach(card=>renderOneCard(card)))    
 }
+
+//function to renderOneCard
+function renderOneCard(cardObj){
+  const card = document.createElement('ul')
+  card.id = `${cardObj.id}`
+  card.className='card'
+  card.innerHTML=`
+  <img src="${cardObj.image}" class="card-pic" />
+  <div class="card-info">
+      <p>${cardObj.name}</p>
+      <p> ${cardObj.cardType}</p>
+      <p> ${cardObj.edition}</p>
+
+  <div class="card-buttons">
+      <button id ="buyout" class="waves-effect waves-light btn red accent-4">Purchase For:$<span class="current-bid">${cardObj.price}</span></button>
+  `
+  main.appendChild(card)
+ 
+  card.querySelector('#buyout').addEventListener('click', (event)=>{
+      console.log(event)
+      card.remove()
+      deleteCard(cardObj)
+  })
+}
