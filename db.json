@@ -1,0 +1,150 @@
+{
+  "cards": [
+    {
+      "id": 1,
+      "name": "Snivy",
+      "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/BWP/BWP_EN_BW06.png",
+      "edition": "BASIC",
+      "cardType": "Grass",
+      "price": 40
+    },
+    {
+      "id": 2,
+      "name": "Pikachu",
+      "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/BWP/BWP_EN_BW54.png",
+      "edition": "Basic",
+      "cardType": "Lightning",
+      "price": 60
+    },
+    {
+      "id": 3,
+      "name": "Zoroark",
+      "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/BWP/BWP_EN_BW09.png",
+      "edition": "STAGE-2",
+      "cardType": "Darkness",
+      "price": 250
+    },
+    {
+      "id": 4,
+      "name": "Kingdra",
+      "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/SWSH11/SWSH11_EN_37.png",
+      "edition": "STAGE-2",
+      "cardType": "Water",
+      "price": 240
+    },
+    {
+      "id": 5,
+      "name": "Squirtle",
+      "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/BW10/BW10_EN_14.png",
+      "edition": "BASIC",
+      "cardType": "Water",
+      "price": 55,
+      "currentBid": null
+    },
+    {
+      "id": 6,
+      "name": "Emboar",
+      "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/BWP/BWP_EN_BW21.png",
+      "edition": "STAGE-2",
+      "cardType": "Fire",
+      "price": 315
+    },
+    {
+      "id": 7,
+      "name": "Charizard",
+      "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/SMP/SMP_EN_SM158.png",
+      "edition": "STAGE-2",
+      "cardType": "Fire",
+      "price": 399,
+      "currentBid": null
+    },
+    {
+      "id": 8,
+      "name": "Machamp",
+      "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/SWSH11/SWSH11_EN_88.png",
+      "edition": "STAGE-2",
+      "cardType": "Fighting",
+      "price": 285
+    },
+    {
+      "id": 9,
+      "name": "Mewtwo",
+      "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/XYP/XYP_EN_XY100.png",
+      "edition": "BASIC",
+      "cardType": "Psychic",
+      "price": 95
+    },
+    {
+      "id": 10,
+      "name": "Zamazenta",
+      "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/SWSHP/SWSHP_EN_SWSH034.png",
+      "edition": "BASIC",
+      "cardType": "Metal",
+      "price": 80
+    },
+    {
+      "id": 11,
+      "name": "Zacian",
+      "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/SWSHP/SWSHP_EN_SWSH033.png",
+      "edition": "BASIC",
+      "cardType": "Metal",
+      "price": 220
+    },
+    {
+      "id": 12,
+      "name": "Haxorus",
+      "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/BWP/BWP_EN_BW57.png",
+      "edition": "STAGE-2",
+      "cardType": "Dragon",
+      "price": 250
+    },
+    {
+      "id": 13,
+      "name": "Latias",
+      "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/SWSHP/SWSHP_EN_SWSH171.png",
+      "edition": "BASIC",
+      "type": "Dragon",
+      "price": 200
+    },
+    {
+      "id": 14,
+      "name": "Lugia",
+      "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/HSP/HSP_EN_HGSS02.png",
+      "edition": "BASIC",
+      "cardType": "Water",
+      "price": 70
+    },
+    {
+      "id": 15,
+      "name": "Blastoise",
+      "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/SM9/SM9_EN_25.png",
+      "edition": "STAGE-2",
+      "cardType": "Water",
+      "price": 320
+    },
+    {
+      "id": 16,
+      "name": "Lucario",
+      "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/BWP/BWP_EN_BW85.png",
+      "edition": "STAGE-1",
+      "cardType": "Fighting",
+      "price": 180
+    },
+    {
+      "id": 17,
+      "name": "Ivysaur",
+      "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/BW5/BW5_EN_2.png",
+      "edition": "STAGE-1",
+      "cardType": "Grass",
+      "price": 165
+    },
+    {
+      "id": 18,
+      "name": "Raichu",
+      "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/SWSH1/SWSH1_EN_66.png",
+      "edition": "STAGE-1",
+      "cardType": "Lightning",
+      "price": 120
+    }
+  ]
+}
