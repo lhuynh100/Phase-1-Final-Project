@@ -116,3 +116,16 @@ function newCardObj(e){
   postNewCard(newCardObj)
   document.querySelector('form').reset()
 }
+
+//funtion to post new cards to db
+function postNewCard(newCardObj){
+  fetch (baseURL,{
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body:JSON.stringify(newCardObj)
+  })
+  .then(res=>res.json())
+  .then(card=>console.log(card))
+}
