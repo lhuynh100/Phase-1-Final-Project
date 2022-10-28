@@ -102,3 +102,17 @@ function createNewCard(){
   main.appendChild(form)
   document.querySelector('form').addEventListener('submit', newCardObj)
 }
+
+function newCardObj(e){
+  e.preventDefault()
+  let newCardObj={
+      name:e.target.name.value,
+      image:e.target.image.value,
+      edition:e.target.edition.value,
+      cardType:e.target.cardType.value,
+      price:e.target.price.value,       
+  }
+  renderOneCard(newCardObj)
+  postNewCard(newCardObj)
+  document.querySelector('form').reset()
+}
