@@ -49,3 +49,56 @@ function renderOneCard(cardObj){
       deleteCard(cardObj)
   })
 }
+
+//function to submit new card
+function createNewCard(){
+  pagerefresh()
+  const form = document.createElement('form')
+  form.id = 'addCardForm'
+  form.innerHTML= `
+      <h3>Submit your card for Sale</h3>
+      <input
+        type="text"
+        name="name"
+        value=""
+        placeholder="Enter Card Name..."
+        class="input-text"
+      />
+      <br />
+      <input
+        type="text"
+        name="image"
+        value=""
+        placeholder="Enter Card Image URL..."
+        class="input-text"
+      />
+      <br />
+      <input
+        type="text"
+        name="edition"
+        value=""
+        placeholder="Enter Edition..."
+        class="input-text"
+      />
+      <br />
+      <input
+        type="text"
+        name="cardType"
+        value=""
+        placeholder="Enter Card Type..."
+        class="input-text"
+      />
+      <br />
+      <input
+        type="text"
+        name="price"
+        value=""
+        placeholder="Enter Your Price..."
+        class="input-text"
+      />
+      <br />
+      <button id ="submitCard" class="waves-effect waves-light btn blue accent-1">Submit Card </button>
+  `
+  main.appendChild(form)
+  document.querySelector('form').addEventListener('submit', newCardObj)
+}
