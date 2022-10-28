@@ -129,3 +129,15 @@ function postNewCard(newCardObj){
   .then(res=>res.json())
   .then(card=>console.log(card))
 }
+
+// function to delete card from db
+function deleteCard(cardObj){
+  fetch(`${baseURL}${cardObj.id}`,{
+      method: 'DELETE',
+      headers:{
+          'Content-Type':'application/json'
+      }
+  })
+  .then(res=>res.json())
+  .then(data=>console.log(data))
+}
