@@ -18,3 +18,10 @@ function pagerefresh(){
 //event listeners
 viewCollection.addEventListener('click', fetchCards)
 newCard.addEventListener('click', createNewCard)
+
+function fetchCards(){
+  fetch (baseURL)
+  .then (res=>res.json())
+  .then (pagerefresh())
+  .then(data=>data.forEach(card=>renderOneCard(card)))    
+}
