@@ -129,22 +129,7 @@
       "edition": "STAGE-1",
       "cardType": "Fighting",
       "price": 180
-    },
-    {
-      "id": 17,
-      "name": "Ivysaur",
-      "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/BW5/BW5_EN_2.png",
-      "edition": "STAGE-1",
-      "cardType": "Grass",
-      "price": 165
-    },
-    {
-      "id": 18,
-      "name": "Raichu",
-      "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/SWSH1/SWSH1_EN_66.png",
-      "edition": "STAGE-1",
-      "cardType": "Lightning",
-      "price": 120
     }
+    
   ]
 }
