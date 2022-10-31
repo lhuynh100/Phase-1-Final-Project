@@ -1,14 +1,6 @@
 {
   "cards": [
     {
-      "id": 1,
-      "name": "Snivy",
-      "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/BWP/BWP_EN_BW06.png",
-      "edition": "BASIC",
-      "cardType": "Grass",
-      "price": 40
-    },
-    {
       "id": 2,
       "name": "Pikachu",
       "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/BWP/BWP_EN_BW54.png",
@@ -129,7 +121,30 @@
       "edition": "STAGE-1",
       "cardType": "Fighting",
       "price": 180
+    },
+    {
+      "name": "Altaria",
+      "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/SMA/SMA_EN_SV37.png",
+      "edition": "STAGE-2",
+      "cardType": "Dragon",
+      "price": "399",
+      "id": 17
+    },
+    {
+      "name": "Ninetales",
+      "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/BWP/BWP_EN_BW66.png",
+      "edition": "STAGE-1",
+      "cardType": "Fire",
+      "price": "250",
+      "id": 18
+    },
+    {
+      "name": "Flareon",
+      "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/BWP/BWP_EN_BW88.png",
+      "edition": "STAGE-1",
+      "cardType": "Fire",
+      "price": "125",
+      "id": 19
     }
-    
   ]
 }

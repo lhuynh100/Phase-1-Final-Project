@@ -1,3 +1,6 @@
+// content load and page refresh
+document.addEventListener('DOMContentLoaded',function(){
+    
 //base URL
 const baseURL = 'http://localhost:3000/cards/'
 
@@ -5,11 +8,6 @@ const baseURL = 'http://localhost:3000/cards/'
 const main = document.getElementById('main')
 const viewCollection = document.getElementById('view')
 const newCard = document.getElementById('newCard')
-
-//content load and page refresh
-document.addEventListener('DOMContentLoaded',()=>{
-    
-})
 
 function pagerefresh(){
   main.innerHTML = ''
@@ -141,3 +139,4 @@ function deleteCard(cardObj){
   .then(res=>res.json())
   .then(data=>console.log(data))
 }
+})
