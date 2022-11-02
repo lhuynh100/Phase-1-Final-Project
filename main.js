@@ -1,4 +1,4 @@
-// content load and page refresh
+// content load
 document.addEventListener('DOMContentLoaded',function(){
     
 //base URL
@@ -31,7 +31,7 @@ function renderOneCard(cardObj){
   card.id = `${cardObj.id}`
   card.className='card'
   card.innerHTML=`
-  <img src="${cardObj.image}" class="card-pic" />
+  <img src="${cardObj.image}" class="card-image" />
   <div class="card-info">
       <p>${cardObj.name}</p>
       <p> ${cardObj.cardType}</p>
