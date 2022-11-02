@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded',function(){
     
 //base URL
-const baseURL = 'http://localhost:3000/cards/'
+const myUrl = 'http://localhost:3000/cards/'
 
 //grab elements of document
 const main = document.getElementById('main')
@@ -18,10 +18,11 @@ viewCollection.addEventListener('click', fetchCards)
 newCard.addEventListener('click', createNewCard)
 
 function fetchCards(){
-  fetch (baseURL)
+  fetch (myUrl)
   .then (res=>res.json())
   .then (pagerefresh())
-  .then(data=>data.forEach(card=>renderOneCard(card)))    
+  .then(data=>
+    data.forEach(card=>renderOneCard(card)))    
 }
 
 //function to renderOneCard
@@ -40,7 +41,6 @@ function renderOneCard(cardObj){
       <button id ="buyout" class="waves-effect waves-light btn red accent-4">Purchase For:$<span class="current-bid">${cardObj.price}</span></button>
   `
   main.appendChild(card)
- 
   card.querySelector('#buyout').addEventListener('click', (event)=>{
       console.log(event)
       card.remove()
@@ -54,13 +54,14 @@ function createNewCard(){
   const form = document.createElement('form')
   form.id = 'addCardForm'
   form.innerHTML= `
-      <h3>Submit your card for Sale</h3>
+      <h3>Submit Your Card to Sale</h3>
       <input
         type="text"
         name="name"
         value=""
         placeholder="Enter Card Name..."
         class="input-text"
+
       />
       <br />
       <input
@@ -95,7 +96,7 @@ function createNewCard(){
         class="input-text"
       />
       <br />
-      <button id ="submitCard" class="waves-effect waves-light btn blue accent-1">Submit Card </button>
+      <button id ="submitCard" class="waves-effect waves-light btn red accent-4">Submit Card </button>
   `
   main.appendChild(form)
   document.querySelector('form').addEventListener('submit', newCardObj)
@@ -117,7 +118,7 @@ function newCardObj(e){
 
 //funtion to post new cards to db
 function postNewCard(newCardObj){
-  fetch (baseURL,{
+  fetch (myUrl,{
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -126,11 +127,12 @@ function postNewCard(newCardObj){
   })
   .then(res=>res.json())
   .then(card=>console.log(card))
+  
 }
 
 // function to delete card from db
 function deleteCard(cardObj){
-  fetch(`${baseURL}${cardObj.id}`,{
+  fetch(`${myUrl}${cardObj.id}`,{
       method: 'DELETE',
       headers:{
           'Content-Type':'application/json'

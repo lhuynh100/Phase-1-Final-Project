@@ -4,11 +4,22 @@
   padding: 0px;
   text-align: center;
   margin-left: 10px; 
-  color: #3c5aa6;
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
   
+ 
   } 
 
   #main {
     box-sizing: border-box;
     text-align: center;
   }
+
+.input-text {
+  text-align: center;
+  color: whitesmoke;
+}
+
+
+
