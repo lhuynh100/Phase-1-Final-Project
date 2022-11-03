@@ -7,7 +7,7 @@ const myUrl = 'http://localhost:3000/cards/'
 //grab elements of document
 const main = document.getElementById('main')
 const availableCards = document.getElementById('view')
-const newCard = document.getElementById('newCard')
+const newCard = document.getElementById('forSale')
 
 function pagerefresh(){
   main.innerHTML = ''
@@ -39,7 +39,7 @@ function renderOneCard(cardObj){
       <p> ${cardObj.edition}</p>
 
   <div class="card-buttons">
-      <button id ="buyout" class="waves-effect waves-light btn red accent-4">Purchase For:$<span class="current-bid">${cardObj.price}</span></button>
+      <button id ="buyout" class="waves-effect waves-light btn red accent-4">Purchase For:${cardObj.price}</button>
   `
   main.appendChild(card)
   card.querySelector('#buyout').addEventListener('click', (event)=>{
@@ -128,7 +128,6 @@ function postNewCard(newCardObj){
   })
   .then(res=>res.json())
   .then(card=>console.log(card))
-  
 }
 
 // function to delete card from db
