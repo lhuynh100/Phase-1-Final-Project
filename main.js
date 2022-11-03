@@ -1,5 +1,5 @@
 // content load
-document.addEventListener('DOMContentLoaded',function(){
+document.addEventListener('DOMContentLoaded', function(){
     
 // base URL
 const myUrl = 'http://localhost:3000/cards/'
@@ -9,22 +9,22 @@ const main = document.getElementById('main')
 const availableCards = document.getElementById('view')
 const newCard = document.getElementById('forSale')
 
-function pagerefresh(){
+function clearContainer(){
   main.innerHTML = ''
 }
 
 // event listeners
 availableCards.addEventListener('click', fetchCards)
-newCard.addEventListener('click', createNewCard)
+newCard.addEventListener('click', createForm)
 
 function fetchCards(){
   fetch (myUrl)
   .then (res=>res.json())
-  .then (pagerefresh())
-  .then(data=>
-    data.forEach(card => renderOneCard(card)
-    ))    
+  .then(data=> {
+    clearContainer()
+    data.forEach(card => renderOneCard(card))
   }
+  )}
 
 // function to renderOneCard
 function renderOneCard(cardObj){
@@ -38,10 +38,10 @@ function renderOneCard(cardObj){
       <p>${cardObj.cardType}</p>
       <p>${cardObj.edition}</p>
   <div class="card-buttons">
-      <button id ="buyout" class="waves-effect waves-light btn red accent-4">Purchase For:${cardObj.price}</button>
+      <button id ="buynow" class="waves-effect waves-light btn red accent-4">Purchase For:${cardObj.price}</button>
       `
   main.append(card)
-  card.querySelector('#buyout').addEventListener('click', (event)=>{
+  card.querySelector('#buynow').addEventListener('click', (event)=>{
       console.log(event)
       card.remove()
       deleteCard(cardObj)
@@ -49,8 +49,8 @@ function renderOneCard(cardObj){
 }
 
 //function to submit new card
-function createNewCard(){
-  pagerefresh()
+function createForm(){
+  clearContainer()
   const form = document.createElement('form')
   form.id = 'addCardForm'
   form.innerHTML= `
@@ -99,11 +99,13 @@ function createNewCard(){
       <button id ="submitCard" class="waves-effect waves-light btn red accent-4">Submit Card </button>
   `
   main.append(form)
-  document.querySelector('form').addEventListener('submit', newCardObj)
+  // debugger
+  document.querySelector('form').addEventListener('submit', createNewCard)
 }
 
-function newCardObj(e){
+function createNewCard(e){
   e.preventDefault()
+  // debugger
   let newCardObj={
       name:e.target.name.value,
       image:e.target.image.value,
@@ -111,6 +113,7 @@ function newCardObj(e){
       cardType:e.target.cardType.value,
       price:e.target.price.value,       
   }
+  console.log(newCardObj)
   renderOneCard(newCardObj)
   postNewCard(newCardObj)
   document.querySelector('form').reset()
@@ -126,7 +129,7 @@ function postNewCard(newCardObj){
     body:JSON.stringify(newCardObj)
   })
   .then(res=>res.json())
-  .then(card=>console.log(card))
+  .then(pokemon=>console.log(pokemon))
 }
 
 // function to delete card from db

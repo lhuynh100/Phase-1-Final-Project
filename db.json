@@ -67,14 +67,6 @@
       "price": 80
     },
     {
-      "id": 11,
-      "name": "Zacian",
-      "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/SWSHP/SWSHP_EN_SWSH033.png",
-      "edition": "BASIC",
-      "cardType": "Metal",
-      "price": 220
-    },
-    {
       "id": 12,
       "name": "Haxorus",
       "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/BWP/BWP_EN_BW57.png",
@@ -145,6 +137,30 @@
       "cardType": "FIRE",
       "price": "80",
       "id": 21
+    },
+    {
+      "name": "Samurott",
+      "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/BWP/BWP_EN_BW22.png",
+      "edition": "STAGE-2",
+      "cardType": "Colorless",
+      "price": "120",
+      "id": 22
+    },
+    {
+      "name": "Typhlosion",
+      "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/SMP/SMP_EN_SM185.png",
+      "edition": "STAGE-2",
+      "cardType": "Fire",
+      "price": "200",
+      "id": 23
+    },
+    {
+      "name": "Flareon",
+      "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/SMP/SMP_EN_SM186.png",
+      "edition": "STAGE-2",
+      "cardType": "Fire",
+      "price": "299",
+      "id": 24
     }
   ]
 }
