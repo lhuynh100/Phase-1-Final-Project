@@ -1,20 +1,20 @@
 // content load
 document.addEventListener('DOMContentLoaded',function(){
     
-//base URL
+// base URL
 const myUrl = 'http://localhost:3000/cards/'
 
 //grab elements of document
 const main = document.getElementById('main')
-const viewCollection = document.getElementById('view')
+const availableCards = document.getElementById('view')
 const newCard = document.getElementById('newCard')
 
 function pagerefresh(){
   main.innerHTML = ''
 }
 
-//event listeners
-viewCollection.addEventListener('click', fetchCards)
+// event listeners
+availableCards.addEventListener('click', fetchCards)
 newCard.addEventListener('click', createNewCard)
 
 function fetchCards(){
@@ -22,10 +22,11 @@ function fetchCards(){
   .then (res=>res.json())
   .then (pagerefresh())
   .then(data=>
-    data.forEach(card=>renderOneCard(card)))    
-}
+    data.forEach(card => renderOneCard(card)
+    ))    
+  }
 
-//function to renderOneCard
+// function to renderOneCard
 function renderOneCard(cardObj){
   const card = document.createElement('ul')
   card.id = `${cardObj.id}`

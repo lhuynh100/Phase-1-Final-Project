@@ -9,14 +9,6 @@
       "price": 60
     },
     {
-      "id": 3,
-      "name": "Zoroark",
-      "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/BWP/BWP_EN_BW09.png",
-      "edition": "STAGE-2",
-      "cardType": "Darkness",
-      "price": 250
-    },
-    {
       "id": 4,
       "name": "Kingdra",
       "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/SWSH11/SWSH11_EN_37.png",
@@ -153,6 +145,14 @@
       "cardType": "Fighting",
       "price": "285",
       "id": 20
+    },
+    {
+      "name": "Victini",
+      "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/BWP/BWP_EN_BW32.png",
+      "edition": "BASIC",
+      "cardType": "FIRE",
+      "price": "80",
+      "id": 21
     }
   ]
 }
