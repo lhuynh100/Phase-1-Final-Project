@@ -35,13 +35,12 @@ function renderOneCard(cardObj){
   <img src="${cardObj.image}" class="card-image" />
   <div class="card-info">
       <p>${cardObj.name}</p>
-      <p> ${cardObj.cardType}</p>
-      <p> ${cardObj.edition}</p>
-
+      <p>${cardObj.cardType}</p>
+      <p>${cardObj.edition}</p>
   <div class="card-buttons">
       <button id ="buyout" class="waves-effect waves-light btn red accent-4">Purchase For:${cardObj.price}</button>
-  `
-  main.appendChild(card)
+      `
+  main.append(card)
   card.querySelector('#buyout').addEventListener('click', (event)=>{
       console.log(event)
       card.remove()
@@ -99,7 +98,7 @@ function createNewCard(){
       <br />
       <button id ="submitCard" class="waves-effect waves-light btn red accent-4">Submit Card </button>
   `
-  main.appendChild(form)
+  main.append(form)
   document.querySelector('form').addEventListener('submit', newCardObj)
 }
 
