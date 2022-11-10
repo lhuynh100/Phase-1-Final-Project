@@ -1,5 +1,5 @@
 
-document.addEventListener('DOMContentLoaded', function(){
+document.addEventListener('DOMContentLoaded',() => {
     
 const myUrl = 'http://localhost:3000/cards/'
 
