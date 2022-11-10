@@ -1,7 +1,7 @@
 {
   "cards": [
     {
-      "id": 2,
+      "id": 1,
       "name": "Pikachu",
       "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/BWP/BWP_EN_BW54.png",
       "edition": "Basic",
@@ -9,7 +9,7 @@
       "price": 60
     },
     {
-      "id": 4,
+      "id": 2,
       "name": "Kingdra",
       "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/SWSH11/SWSH11_EN_37.png",
       "edition": "STAGE-2",
@@ -17,33 +17,15 @@
       "price": 240
     },
     {
-      "id": 5,
+      "id": 3,
       "name": "Squirtle",
       "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/BW10/BW10_EN_14.png",
       "edition": "BASIC",
       "cardType": "Water",
-      "price": 55,
-      "currentBid": null
+      "price": 55
     },
     {
-      "id": 6,
-      "name": "Emboar",
-      "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/BWP/BWP_EN_BW21.png",
-      "edition": "STAGE-2",
-      "cardType": "Fire",
-      "price": 315
-    },
-    {
-      "id": 7,
-      "name": "Charizard",
-      "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/SMP/SMP_EN_SM158.png",
-      "edition": "STAGE-2",
-      "cardType": "Fire",
-      "price": 399,
-      "currentBid": null
-    },
-    {
-      "id": 8,
+      "id": 5,
       "name": "Machamp",
       "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/SWSH11/SWSH11_EN_88.png",
       "edition": "STAGE-2",
@@ -51,7 +33,7 @@
       "price": 285
     },
     {
-      "id": 9,
+      "id": 6,
       "name": "Mewtwo",
       "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/XYP/XYP_EN_XY100.png",
       "edition": "BASIC",
@@ -59,7 +41,7 @@
       "price": 95
     },
     {
-      "id": 10,
+      "id": 7,
       "name": "Zamazenta",
       "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/SWSHP/SWSHP_EN_SWSH034.png",
       "edition": "BASIC",
@@ -67,7 +49,7 @@
       "price": 80
     },
     {
-      "id": 12,
+      "id": 8,
       "name": "Haxorus",
       "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/BWP/BWP_EN_BW57.png",
       "edition": "STAGE-2",
@@ -75,15 +57,7 @@
       "price": 250
     },
     {
-      "id": 13,
-      "name": "Latias",
-      "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/SWSHP/SWSHP_EN_SWSH171.png",
-      "edition": "BASIC",
-      "type": "Dragon",
-      "price": 200
-    },
-    {
-      "id": 14,
+      "id": 10,
       "name": "Lugia",
       "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/HSP/HSP_EN_HGSS02.png",
       "edition": "BASIC",
@@ -91,7 +65,7 @@
       "price": 70
     },
     {
-      "id": 15,
+      "id": 11,
       "name": "Blastoise",
       "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/SM9/SM9_EN_25.png",
       "edition": "STAGE-2",
@@ -99,7 +73,7 @@
       "price": 320
     },
     {
-      "id": 16,
+      "id": 12,
       "name": "Lucario",
       "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/BWP/BWP_EN_BW85.png",
       "edition": "STAGE-1",
@@ -107,60 +81,76 @@
       "price": 180
     },
     {
+      "id": 13,
       "name": "Altaria",
       "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/SMA/SMA_EN_SV37.png",
       "edition": "STAGE-2",
       "cardType": "Dragon",
-      "price": "399",
-      "id": 17
+      "price": "399"
     },
     {
+      "id": 14,
       "name": "Ninetales",
       "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/BWP/BWP_EN_BW66.png",
       "edition": "STAGE-1",
       "cardType": "Fire",
-      "price": "250",
-      "id": 18
+      "price": "250"
     },
     {
+      "id": 15,
       "name": "Barbaracle",
       "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/SWSH11/SWSH11_EN_107.png",
       "edition": "STAGE-2",
       "cardType": "Fighting",
-      "price": "285",
-      "id": 20
+      "price": "285"
     },
     {
+      "id": 16,
       "name": "Victini",
       "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/BWP/BWP_EN_BW32.png",
       "edition": "BASIC",
       "cardType": "FIRE",
-      "price": "80",
-      "id": 21
+      "price": "80"
     },
     {
+      "id": 17,
       "name": "Samurott",
       "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/BWP/BWP_EN_BW22.png",
       "edition": "STAGE-2",
-      "cardType": "Colorless",
-      "price": "120",
-      "id": 22
+      "cardType": "Water",
+      "price": "120"
     },
     {
+      "id": 18,
       "name": "Typhlosion",
       "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/SMP/SMP_EN_SM185.png",
       "edition": "STAGE-2",
       "cardType": "Fire",
-      "price": "200",
-      "id": 23
+      "price": "200"
     },
     {
+      "id": 19,
       "name": "Flareon",
       "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/SMP/SMP_EN_SM186.png",
       "edition": "STAGE-2",
       "cardType": "Fire",
-      "price": "299",
-      "id": 24
+      "price": "299"
+    },
+    {
+      "id": 20,
+      "name": "Jolteon",
+      "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/BWP/BWP_EN_BW91.png",
+      "edition": "STAGE-1",
+      "cardType": "Lightning",
+      "price": "120"
+    },
+    {
+      "id": 21,
+      "name": "Luxio",
+      "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/BWP/BWP_EN_BW34.png",
+      "edition": "STAGE-1",
+      "cardType": "Lightning",
+      "price": "125"
     }
   ]
 }

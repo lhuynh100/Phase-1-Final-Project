@@ -26,13 +26,13 @@ function fetchCards(){
   }
   )}
 
-// function to renderOneCard
+// function to renderOneCard // use interpolation to inject the value
 function renderOneCard(cardObj){
   const card = document.createElement('ul')
   card.id = `${cardObj.id}`
   card.className='card'
   card.innerHTML=`
-  <img src="${cardObj.image}" class="card-image" />
+  <img src="${cardObj.image}" class="card-image"/>
   <div class="card-info">
       <p>${cardObj.name}</p>
       <p>${cardObj.cardType}</p>
@@ -121,6 +121,7 @@ function createNewCard(e){
 
 //funtion to post new cards to db
 function postNewCard(newCardObj){
+  console.log(newCardObj)
   fetch (myUrl,{
     method: 'POST',
     headers: {
