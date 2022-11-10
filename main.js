@@ -1,10 +1,8 @@
-// content load
+
 document.addEventListener('DOMContentLoaded', function(){
     
-// base URL
 const myUrl = 'http://localhost:3000/cards/'
 
-//grab elements of document
 const main = document.getElementById('main')
 const availableCards = document.getElementById('view')
 const newCard = document.getElementById('forSale')
@@ -13,7 +11,6 @@ function clearContainer(){
   main.innerHTML = ''
 }
 
-// event listeners
 availableCards.addEventListener('click', fetchCards)
 newCard.addEventListener('click', createForm)
 
@@ -26,7 +23,6 @@ function fetchCards(){
   }
   )}
 
-// function to renderOneCard // use interpolation to inject the value
 function renderOneCard(cardObj){
   const card = document.createElement('ul')
   card.id = `${cardObj.id}`
@@ -48,7 +44,6 @@ function renderOneCard(cardObj){
   })
 }
 
-//function to submit new card
 function createForm(){
   clearContainer()
   const form = document.createElement('form')
@@ -99,13 +94,13 @@ function createForm(){
       <button id ="submitCard" class="waves-effect waves-light btn red accent-4">Submit Card </button>
   `
   main.append(form)
-  // debugger
+ 
   document.querySelector('form').addEventListener('submit', createNewCard)
 }
 
 function createNewCard(e){
   e.preventDefault()
-  // debugger
+
   let newCardObj={
       name:e.target.name.value,
       image:e.target.image.value,
@@ -119,7 +114,6 @@ function createNewCard(e){
   document.querySelector('form').reset()
 }
 
-//funtion to post new cards to db
 function postNewCard(newCardObj){
   console.log(newCardObj)
   fetch (myUrl,{
@@ -133,7 +127,6 @@ function postNewCard(newCardObj){
   .then(pokemon=>console.log(pokemon))
 }
 
-// function to delete card from db
 function deleteCard(cardObj){
   fetch(`${myUrl}${cardObj.id}`,{
       method: 'DELETE',
