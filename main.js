@@ -1,7 +1,8 @@
 
+
 document.addEventListener('DOMContentLoaded',() => {
     
-const myUrl = 'http://localhost:3000/cards/'
+const myUrl = 'http://localhost:3000/cards/' 
 
 const main = document.getElementById('main')
 const availableCards = document.getElementById('view')
@@ -19,9 +20,10 @@ function fetchCards(){
   .then (res=>res.json())
   .then(data=> {
     clearContainer()
-    data.forEach(card => renderOneCard(card))
+    data.forEach(renderOneCard)
   }
-  )}
+  )
+}
 
 function renderOneCard(cardObj){
   const card = document.createElement('ul')
@@ -37,7 +39,7 @@ function renderOneCard(cardObj){
       <button id ="buynow" class="waves-effect waves-light btn red accent-4">Purchase For:${cardObj.price}</button>
       `
   main.append(card)
-  card.querySelector('#buynow').addEventListener('click', (event)=>{
+  card.querySelector('#buynow').addEventListener('click', (event)=>{ 
       console.log(event)
       card.remove()
       deleteCard(cardObj)
@@ -95,7 +97,7 @@ function createForm(){
   `
   main.append(form)
  
-  document.querySelector('form').addEventListener('submit', createNewCard)
+  document.querySelector('form').addEventListener('submit', createNewCard) 
 }
 
 function createNewCard(e){
@@ -123,7 +125,7 @@ function postNewCard(newCardObj){
     },
     body:JSON.stringify(newCardObj)
   })
-  .then(res=>res.json())
+  .then(res=>res.json()) 
   .then(pokemon=>console.log(pokemon))
 }
 

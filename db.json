@@ -1,14 +1,6 @@
 {
   "cards": [
     {
-      "id": 1,
-      "name": "Pikachu",
-      "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/BWP/BWP_EN_BW54.png",
-      "edition": "Basic",
-      "cardType": "Lightning",
-      "price": 60
-    },
-    {
       "id": 2,
       "name": "Kingdra",
       "image": "https://assets.pokemon.com/assets/cms2/img/cards/web/SWSH11/SWSH11_EN_37.png",
